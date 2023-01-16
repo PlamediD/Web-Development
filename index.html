@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--
+    Name: Plamedi Diakubama
+    Class: CPSC 4910
+    Assignment: Homework 1
+    File name: index.html
+-->
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        
+        <title>
+            Homework 1 Main Page 
+        </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+
+        
+    </head>
+
+    <body>
+         <h1> Welcome to my first website. <br>My name is Plamedi Diakubama🙂</h1>
+        
+        <section>
+            
+            <h2>    A paragraph Describing my Goal  </h2>
+                
+                <pre>
+    I believe that Seattle University has given me all the necessary tools to be successfull in this field. 
+Beside computer science knowledge, my time here at SU has allowed me to learn time management, disciple and navigating tough conversations.
+So, My plan after getting my Bachelor is to work as a software engineer for a few years to gain professional and hands-on experience.
+After two or three years, I would like to go to grad school and pursue a master degree in Articial intelligence. 
+                </pre>  
+        </section>
+
+        <section>
+            <h2>
+                A Table Listing at Least Six Computer Science Courses I've Taken at Seattle University
+            </h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th> Course Number</th>
+                    <th>Course Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td> <a href="CPSC3200.html"> CPSC 3200 </a></td>
+                    <td>Object-Oriented Design</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>CPSC 3400</td>
+                    <td>Languages & Computations</td>
+                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="CPSC4910.html"> CPSC 4910 </a></td>
+                    <td> Web Development </td>
+                    
+                    
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>CPSC 3500</td>
+                    <td>Computing Systems</td>
+                    
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="CPSC4100.html">CPSC 4100 </a></td>
+                    <td> Design & Analysis of Algorithms </td>
+                    
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>CPSC 2600</td>
+                    <td> Foundations of Computer Science </td>
+                    
+                    
+                </tr>
+
+            </table>
+        </section>
+        <section>
+            <h2>
+                Programming Languages I know 
+            </h2>
+            <ul>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+              </ul>
+        </section>
+
+        <section>
+            <h2>
+                A code Snippet Containing 8-20 Lines of Code
+            </h2>
+            <p>
+                Description:
+                <br>Given two strings s and t, the goal of this code is to determine if they are isomorphic.
+
+                <br>Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+                
+                
+            </p>
+            <pre>
+                
+                
+//Code below
+
+public class Solution {
+    
+    
+    public bool IsIsomorphic(string s, string t) {
+        
+      if(s.Length != t.Length) return false;
+        
+        var dict = new Dictionary<char, char>();
+        
+        for(int i = 0; i < s.Length; i++){
+            if(!dict.ContainsKey(s[i]) && !dict.ContainsValue(t[i]))
+                dict[s[i]] = t[i];
+            else if(!dict.ContainsKey(s[i]) || dict[s[i]] != t[i]) return false;
+        }
+        
+        return true;
+    }
+}
+            </pre>
+        </section>
+      
+
+    </body>
+</html>
+
+
+
+   
+       
+                
